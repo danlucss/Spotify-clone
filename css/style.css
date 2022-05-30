@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-color: #2944a9;
+  --text-color: #fff;
+  --main-color: #1ed760;
+  --btn__cta-color: #40d183;
+
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+
+  text-align: center;
+
+  font-family: 'Radio Canada', sans-serif;
+}
+
+/* Navigation */
+nav {
+  height: 70px;
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #1ed760;
+}
+.menu-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+
+.menu-nav .hidden {
+  display: none;
+
+  width: 100px;
+  height: 80px;
+  position: absolute;
+
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+}
+
+.menu-nav .hidden a {
+  color: rgb(10, 10, 10);
+}
+
+.menu-nav .hidden.active {
+  display: block;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  background: url(/bg-spotify.png) center no-repeat;
+  background-size: cover;
+
+  height: calc(100vh - 70px);
+}
+
+.title {
+  font-size: 10.4rem;
+  line-height: 10.4rem;
+  font-weight: 700;
+
+  width: 754px;
+}
+
+main .info {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.btn__cta {
+  padding: 1.4rem 3.2rem;
+  border-radius: 500px;
+
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  transition: transform background-color 0.3s ease-in-out;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Radio Canada', sans-serif;
+  text-transform: uppercase;
+}
+
+.btn__cta:hover {
+  transform: scale(1.1);
+  background-color: var(--btn__cta-color);
+}
